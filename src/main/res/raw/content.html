@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, user-scalable=no"/>
+    <title>Http Server</title>
+    <style>
+        * {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        }
+
+        html {
+        font-family: 'courier', 'serif';
+        background: #E7EAEC;
+        font-size: 16px;
+        padding: 0;
+        height: 100%;
+        }
+
+        a {
+        line-height: 2.0;
+        padding: 0;
+        color: #3060D0;
+        }
+
+        a.file {
+        color: #000000;
+        }
+
+        #container {
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        }
+
+        .left {
+        background: #c4c4c4;
+        float: left;
+        height: 100%;
+        padding: 4px;
+        width: 200px;
+        }
+
+        .content {
+        height: 100%;
+        background: #c4c4c4;
+        padding: 8px;
+        margin-left: 220px;
+        overflow: auto
+        }
+
+        .nav_href {
+        text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+    <div class="left">
+        <ul><a class="nav_href" href="/file">root</a></ul>
+        <ul><a class="nav_href" href="/file?path=%2Fsdcard">sdcard</a></ul>
+        <ul><a class="nav_href" href="/file?path=DATA_PATH">data</a></ul>
+        <ul><a class="nav_href" href="/file?path=%2Fsdcard%2FDCIM">picture</a></ul>
+    </div>
+    <div class="content">
+        <h2>Directory content for FILE_PATH</h2>
+        <br>
+
+        <ul>
+            CONTENT
+        </ul>
+    </div>
+</div>
+</body>
+</html>
